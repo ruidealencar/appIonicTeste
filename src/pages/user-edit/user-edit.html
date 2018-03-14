@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro de Denúncias
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item>
+        <ion-label>Lista de Motivos</ion-label>
+        <ion-select [(ngModel)]="gender">
+          <ion-option value="f">Roubo</ion-option>
+          <ion-option value="m">Furto</ion-option>
+        </ion-select>
+      </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Seu email</ion-label>
+      <ion-input type="text" name="first_name" [(ngModel)]="model.first_name"></ion-input>
+    </ion-item>
+
+    <ion-content padding>
+        <img src="{{ photo }}" />
+      </ion-content>
+      
+      
+        <button ion-button large block (click)="takePicture()">Câmera</button>
+      
+
+    
+  </ion-list>
+  <ion-footer padding>
+    <button ion-button block (click)="save()" color="primary">Salvar</button>
+  </ion-footer>
+</ion-content>
