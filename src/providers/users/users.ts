@@ -90,9 +90,8 @@ export class UsersProvider {
   update(user: any) {
     return new Promise((resolve, reject) => {
       let url = this.API_URL + 'users/' + user.id;
-      let data = {
-        "first_name": user.first_name,
-        "last_name": user.last_name
+      {
+        this.newMethod(user);
       }
 
       this.http.put(url, user)
@@ -103,6 +102,13 @@ export class UsersProvider {
           reject(error.json());
         });
     });
+  }
+
+  private newMethod(user: any) {
+    "first_name";
+    user.first_name,
+      "last_name";
+    user.last_name;
   }
 
   remove(id: number) {

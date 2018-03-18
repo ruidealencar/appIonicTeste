@@ -2,7 +2,7 @@ import { UsersProvider } from './../../providers/users/users';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
-import { transition } from '@angular/core/src/animation/dsl';
+
 
 
 
