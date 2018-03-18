@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
+
 @Injectable()
 export class UsersProvider {
   private API_URL = 'https://reqres.in/api/'

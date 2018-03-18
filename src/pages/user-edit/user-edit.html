@@ -18,21 +18,22 @@
 
   <ion-list>
     <ion-item>
-      <ion-label stacked>Seu email</ion-label>
-      <ion-input type="text" name="first_name" [(ngModel)]="model.first_name"></ion-input>
+      <ion-label>ruidealencar@gmail.com</ion-label>
     </ion-item>
 
-    <ion-content padding>
+    
         <img src="{{ photo }}" />
-      </ion-content>
-      
-      
         <button ion-button large block (click)="takePicture()">Câmera</button>
       
+        
+        
 
-    
+
+      
+       
   </ion-list>
   <ion-footer padding>
+      
     <button ion-button block (click)="save()" color="primary">Salvar</button>
   </ion-footer>
 </ion-content>
